@@ -1,3 +1,6 @@
+# WAP to implement BFS traversal in python
+
+
 from queue import Queue
 ad_list={
     "A":["B","D"],
