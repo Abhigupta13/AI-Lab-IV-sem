@@ -1,3 +1,4 @@
+# WAP to implement dFS traversal in python
 graph={
     "A":["B","D"],
     "B":["A","C"],
