@@ -10,7 +10,6 @@ def objective_function(path, cities):
     total_distance += distance(cities[path[-1]], cities[path[0]])
     return total_distance
 
-# define the hill climbing algorithm
 def hill_climbing_tsp(cities, max_iter):
     path = list(range(len(cities)))
     random.shuffle(path)
@@ -40,4 +39,4 @@ cities = [(0, 0), (1, 2), (3, 1), (2, 5), (4, 4)]
 max_iter = 100
 best_path = hill_climbing_tsp(cities, max_iter)
 print("Best path found:", best_path)
-print("Total distance:%.3f" %(objective_function(best_path, cities)),"units")
+print("Total distance:%.2f" %(objective_function(best_path, cities)),"units")
